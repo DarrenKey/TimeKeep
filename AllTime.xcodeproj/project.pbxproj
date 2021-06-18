@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA581BCBC814C25ABFEBAB07 /* Pods_TimeKeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FC36C57DEC517B1DA33EE /* Pods_TimeKeep.framework */; };
+		BD06ED2C2400B2890024476C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD06ED2B2400B2890024476C /* Settings.bundle */; };
+		BD0A3B54246C77EC005C65F2 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B53246C77EC005C65F2 /* Charts.swift */; };
+		BD0A3B562470924E005C65F2 /* ChartsFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B552470924E005C65F2 /* ChartsFormat.swift */; };
+		BD0A3B582470E8A2005C65F2 /* NewRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B572470E8A2005C65F2 /* NewRoutine.swift */; };
+		BD0A3B5A24718FD6005C65F2 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B5924718FD6005C65F2 /* Routine.swift */; };
+		BD0A3B5C247353B2005C65F2 /* TimelineYAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B5B247353B2005C65F2 /* TimelineYAxisRenderer.swift */; };
+		BD0A3B5E24744645005C65F2 /* CategoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3B5D24744645005C65F2 /* CategoryPopup.swift */; };
+		BD0E9A212464C0F100EBFB75 /* TimelineSeperatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0E9A202464C0F100EBFB75 /* TimelineSeperatorCell.swift */; };
+		BD0E9A2924678AA700EBFB75 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0E9A2824678AA700EBFB75 /* Timeline.swift */; };
+		BD0E9A2E2467A80100EBFB75 /* HourFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0E9A2D2467A80100EBFB75 /* HourFormat.swift */; };
+		BD0EEDB124589E8C0025B8D2 /* SelectedDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EEDB024589E8C0025B8D2 /* SelectedDateCell.swift */; };
+		BD0EEDB3245919A20025B8D2 /* CalenderMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EEDB2245919A20025B8D2 /* CalenderMonthDelegate.swift */; };
+		BD0EEDB524591A9A0025B8D2 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0EEDB424591A9A0025B8D2 /* MonthCell.swift */; };
+		BD246608244AA43D006DDC00 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD246607244AA43D006DDC00 /* Category.swift */; };
+		BD27B2BC245097E700CC8D5C /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27B2BB245097E700CC8D5C /* TabBarCell.swift */; };
+		BD2C06C1236D14D900D2157D /* Segoe UI Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = BD2C06BD236D14D900D2157D /* Segoe UI Bold.woff */; };
+		BD2C06C2236D14D900D2157D /* Segoe UI Bold Italic.woff in Resources */ = {isa = PBXBuildFile; fileRef = BD2C06BE236D14D900D2157D /* Segoe UI Bold Italic.woff */; };
+		BD2C06C4236D14D900D2157D /* Segoe UI Italic.woff in Resources */ = {isa = PBXBuildFile; fileRef = BD2C06C0236D14D900D2157D /* Segoe UI Italic.woff */; };
+		BD2C06D2236D185F00D2157D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD2C06CA236D185F00D2157D /* LaunchScreen.storyboard */; };
+		BD2C06FA236D20A900D2157D /* checkBoxFILLED.imageset in Resources */ = {isa = PBXBuildFile; fileRef = BD2C06F9236D20A900D2157D /* checkBoxFILLED.imageset */; };
+		BD41D9F324F0AB6D00244E30 /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41D9F224F0AB6D00244E30 /* LaunchScreenVC.swift */; };
+		BD5E613E24B8C61D0095CF6C /* CustomRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E613D24B8C61D0095CF6C /* CustomRenderer.swift */; };
+		BD69B30E24BA734000C049FE /* ValueNameFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69B30D24BA734000C049FE /* ValueNameFormat.swift */; };
+		BD69D4F724F206B1007E0A52 /* Default-Portrait-1194h.png in Resources */ = {isa = PBXBuildFile; fileRef = BD69D4F624F206B1007E0A52 /* Default-Portrait-1194h.png */; };
+		BD69D4FE24F20A2F007E0A52 /* Default-Portrait-1112h.png in Resources */ = {isa = PBXBuildFile; fileRef = BD69D4F924F20A2E007E0A52 /* Default-Portrait-1112h.png */; };
+		BD69D4FF24F20A2F007E0A52 /* Default-Portrait-iPadPro.png in Resources */ = {isa = PBXBuildFile; fileRef = BD69D4FA24F20A2F007E0A52 /* Default-Portrait-iPadPro.png */; };
+		BD69D50324F20CCD007E0A52 /* Default-Portrait-iPad7Gen.png in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50224F20CCC007E0A52 /* Default-Portrait-iPad7Gen.png */; };
+		BD69D50524F20D6D007E0A52 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50424F20D6C007E0A52 /* Default-Portrait.png */; };
+		BD69D50924F961F8007E0A52 /* APACHELICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50824F961F8007E0A52 /* APACHELICENSE.txt */; };
+		BD69D50B24F96212007E0A52 /* Documentation.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50A24F96212007E0A52 /* Documentation.txt */; };
+		BD69D50E24F9627C007E0A52 /* MITLICENSEWobbleView.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50C24F9627B007E0A52 /* MITLICENSEWobbleView.txt */; };
+		BD69D50F24F9627C007E0A52 /* MITLICENSEBaFluidView.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D50D24F9627B007E0A52 /* MITLICENSEBaFluidView.txt */; };
+		BD69D51124F962CB007E0A52 /* MITLICENSEBEMCheckBox.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D51024F962CA007E0A52 /* MITLICENSEBEMCheckBox.txt */; };
+		BD69D51324F96354007E0A52 /* MITLICENSECircleColorPicker.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD69D51224F96354007E0A52 /* MITLICENSECircleColorPicker.txt */; };
+		BD700FF523B8831E00F131EA /* Segoe UI.woff in Resources */ = {isa = PBXBuildFile; fileRef = BD700FF423B8831D00F131EA /* Segoe UI.woff */; };
+		BD700FFB23B9156A00F131EA /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = BD700FFA23B9156900F131EA /* Fonts */; };
+		BD712AC924551D4D00271EED /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AC824551D4D00271EED /* TabBar.swift */; };
+		BD712ACB2455E93E00271EED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712ACA2455E93E00271EED /* TabBarController.swift */; };
+		BD712ACD2455F3F300271EED /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712ACC2455F3F300271EED /* MainController.swift */; };
+		BD712ACF24562C6800271EED /* Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712ACE24562C6800271EED /* Planner.swift */; };
+		BD712AD124564CA100271EED /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AD024564CA100271EED /* Task.swift */; };
+		BD712AD3245740FC00271EED /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AD2245740FC00271EED /* NewTask.swift */; };
+		BD712AD72457740B00271EED /* NewTaskCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AD62457740B00271EED /* NewTaskCategoryCell.swift */; };
+		BD712AD924579BFC00271EED /* CalendarPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AD824579BFC00271EED /* CalendarPopup.swift */; };
+		BD712AE12457A93500271EED /* CalendarPopupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AE02457A93500271EED /* CalendarPopupCell.swift */; };
+		BD712AE32458754800271EED /* CalendarPopupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AE22458754800271EED /* CalendarPopupCard.swift */; };
+		BD712AE524587D2400271EED /* CalendarPopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD712AE424587D2400271EED /* CalendarPopupDelegate.swift */; };
+		BD74EDEF23BE703E0052C28F /* Calendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD74EDED23BE703D0052C28F /* Calendar.xcdatamodeld */; };
+		BD8EEF9F2517C7E900322C2B /* CustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8EEF9E2517C7E900322C2B /* CustomEvent.swift */; };
+		BDA5E725248FFD12001332F8 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5E724248FFD12001332F8 /* DeviceInfo.swift */; };
+		BDA96A9A245B77A300BA924E /* TaskSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96A99245B77A300BA924E /* TaskSaved.swift */; };
+		BDA96A9C245B982E00BA924E /* PlannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96A9B245B982E00BA924E /* PlannerCell.swift */; };
+		BDA96A9E245B98E700BA924E /* PlannerCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96A9D245B98E700BA924E /* PlannerCellDelegate.swift */; };
+		BDA96AA0245E7D8F00BA924E /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96A9F245E7D8E00BA924E /* Stopwatch.swift */; };
+		BDA96AA2245F30D000BA924E /* StopwatchSelectedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96AA1245F30D000BA924E /* StopwatchSelectedCell.swift */; };
+		BDA96AA4245F30E000BA924E /* StopwatchCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA96AA3245F30E000BA924E /* StopwatchCategoryCell.swift */; };
+		BDBF4E3A24C67AD1002A665B /* PageOneOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF4E3924C67AD1002A665B /* PageOneOnboarding.swift */; };
+		BDBF4E3C24C76CBF002A665B /* PageTwoOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF4E3B24C76CBF002A665B /* PageTwoOnboarding.swift */; };
+		BDBF4E3E24C76E1B002A665B /* ShouldTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF4E3D24C76E1B002A665B /* ShouldTutorial.swift */; };
+		BDC7008D244A198A00F200E1 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7008C244A198A00F200E1 /* ColorCell.swift */; };
+		BDC9472C244006D400D75829 /* Updated scripts in Resources */ = {isa = PBXBuildFile; fileRef = BDC9472B244006D400D75829 /* Updated scripts */; };
+		BDC947302440076A00D75829 /* Old scripts in Resources */ = {isa = PBXBuildFile; fileRef = BDC9472F2440076A00D75829 /* Old scripts */; };
+		BDC947322440094000D75829 /* Routines.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC947312440094000D75829 /* Routines.swift */; };
+		BDC947642440B9F500D75829 /* RoutineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC947632440B9F500D75829 /* RoutineCell.swift */; };
+		BDC9476724424E2500D75829 /* Updated Assets in Resources */ = {isa = PBXBuildFile; fileRef = BDC9476624424E2500D75829 /* Updated Assets */; };
+		BDC9476924429DA600D75829 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC9476824429DA600D75829 /* Categories.swift */; };
+		BDC9476C2442B30900D75829 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC9476A2442A09200D75829 /* CategoryCell.swift */; };
+		BDC9476D2442BD5C00D75829 /* Updated.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC9476524424D2200D75829 /* Updated.xcassets */; };
+		BDD299FD23BA4C7A00267410 /* segoeui.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDD299FC23BA4C7900267410 /* segoeui.otf */; };
+		BDD96B4E236D2642004D543B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD96B4D236D2642004D543B /* Main.storyboard */; };
+		BDD96B69239C5F01004D543B /* Assets for App in Resources */ = {isa = PBXBuildFile; fileRef = BDD96B67238DDC0D004D543B /* Assets for App */; };
+		BDD96B8723B557C4004D543B /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD96B8623B557C4004D543B /* Image.xcassets */; };
+		BDDC504324C93B8900A34064 /* TouchDownGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDC504224C93B8900A34064 /* TouchDownGestureRecognizer.swift */; };
+		BDEEB3D5244BBCD200CCBDBA /* WobbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEEB3D4244BBCD200CCBDBA /* WobbleView.swift */; };
+		BDF3C1D2236B7D5B00E11E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3C1D1236B7D5B00E11E71 /* AppDelegate.swift */; };
+		BDF3C1D4236B7D5B00E11E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3C1D3236B7D5B00E11E71 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16CC285AD6895B9E69E22ECE /* Pods-TimeKeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeep.release.xcconfig"; path = "Target Support Files/Pods-TimeKeep/Pods-TimeKeep.release.xcconfig"; sourceTree = "<group>"; };
+		214FC36C57DEC517B1DA33EE /* Pods_TimeKeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeKeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD06ED2B2400B2890024476C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BD0A3B53246C77EC005C65F2 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		BD0A3B552470924E005C65F2 /* ChartsFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsFormat.swift; sourceTree = "<group>"; };
+		BD0A3B572470E8A2005C65F2 /* NewRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutine.swift; sourceTree = "<group>"; };
+		BD0A3B5924718FD6005C65F2 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		BD0A3B5B247353B2005C65F2 /* TimelineYAxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineYAxisRenderer.swift; sourceTree = "<group>"; };
+		BD0A3B5D24744645005C65F2 /* CategoryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPopup.swift; sourceTree = "<group>"; };
+		BD0E9A202464C0F100EBFB75 /* TimelineSeperatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSeperatorCell.swift; sourceTree = "<group>"; };
+		BD0E9A2824678AA700EBFB75 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		BD0E9A2D2467A80100EBFB75 /* HourFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourFormat.swift; sourceTree = "<group>"; };
+		BD0EEDB024589E8C0025B8D2 /* SelectedDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDateCell.swift; sourceTree = "<group>"; };
+		BD0EEDB2245919A20025B8D2 /* CalenderMonthDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderMonthDelegate.swift; sourceTree = "<group>"; };
+		BD0EEDB424591A9A0025B8D2 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
+		BD246607244AA43D006DDC00 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BD27B2BB245097E700CC8D5C /* TabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
+		BD2C06BD236D14D900D2157D /* Segoe UI Bold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Segoe UI Bold.woff"; path = "../../../Downloads/segoe-ui-4-cufonfonts-webfont/Segoe UI Bold.woff"; sourceTree = "<group>"; };
+		BD2C06BE236D14D900D2157D /* Segoe UI Bold Italic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Segoe UI Bold Italic.woff"; path = "../../../Downloads/segoe-ui-4-cufonfonts-webfont/Segoe UI Bold Italic.woff"; sourceTree = "<group>"; };
+		BD2C06BF236D14D900D2157D /* Segoe UI.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Segoe UI.woff"; path = "../../../Downloads/segoe-ui-4-cufonfonts-webfont/Segoe UI.woff"; sourceTree = "<group>"; };
+		BD2C06C0236D14D900D2157D /* Segoe UI Italic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Segoe UI Italic.woff"; path = "../../../Downloads/segoe-ui-4-cufonfonts-webfont/Segoe UI Italic.woff"; sourceTree = "<group>"; };
+		BD2C06CA236D185F00D2157D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../Downloads/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD2C06F9236D20A900D2157D /* checkBoxFILLED.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = checkBoxFILLED.imageset; path = ../../../Downloads/todoList/todoList/Assets.xcassets/checkBoxFILLED.imageset; sourceTree = "<group>"; };
+		BD41D9F224F0AB6D00244E30 /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		BD5E613D24B8C61D0095CF6C /* CustomRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRenderer.swift; sourceTree = "<group>"; };
+		BD69B30D24BA734000C049FE /* ValueNameFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueNameFormat.swift; sourceTree = "<group>"; };
+		BD69D4F624F206B1007E0A52 /* Default-Portrait-1194h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait-1194h.png"; path = "Updated Assets/Launch Screen Images/Default-Portrait-1194h.png"; sourceTree = "<group>"; };
+		BD69D4F924F20A2E007E0A52 /* Default-Portrait-1112h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait-1112h.png"; path = "Updated Assets/Launch Screen Images/Default-Portrait-1112h.png"; sourceTree = "<group>"; };
+		BD69D4FA24F20A2F007E0A52 /* Default-Portrait-iPadPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait-iPadPro.png"; path = "Updated Assets/Launch Screen Images/Default-Portrait-iPadPro.png"; sourceTree = "<group>"; };
+		BD69D50224F20CCC007E0A52 /* Default-Portrait-iPad7Gen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait-iPad7Gen.png"; path = "Updated Assets/Launch Screen Images/Default-Portrait-iPad7Gen.png"; sourceTree = "<group>"; };
+		BD69D50424F20D6C007E0A52 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "Updated Assets/Launch Screen Images/Default-Portrait.png"; sourceTree = "<group>"; };
+		BD69D50824F961F8007E0A52 /* APACHELICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APACHELICENSE.txt; sourceTree = "<group>"; };
+		BD69D50A24F96212007E0A52 /* Documentation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Documentation.txt; sourceTree = "<group>"; };
+		BD69D50C24F9627B007E0A52 /* MITLICENSEWobbleView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MITLICENSEWobbleView.txt; sourceTree = "<group>"; };
+		BD69D50D24F9627B007E0A52 /* MITLICENSEBaFluidView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MITLICENSEBaFluidView.txt; sourceTree = "<group>"; };
+		BD69D51024F962CA007E0A52 /* MITLICENSEBEMCheckBox.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MITLICENSEBEMCheckBox.txt; sourceTree = "<group>"; };
+		BD69D51224F96354007E0A52 /* MITLICENSECircleColorPicker.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MITLICENSECircleColorPicker.txt; sourceTree = "<group>"; };
+		BD700FF423B8831D00F131EA /* Segoe UI.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.woff"; sourceTree = "<group>"; };
+		BD700FFA23B9156900F131EA /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../../Downloads/Fonts; sourceTree = "<group>"; };
+		BD712AC824551D4D00271EED /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BD712ACA2455E93E00271EED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BD712ACC2455F3F300271EED /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		BD712ACE24562C6800271EED /* Planner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planner.swift; sourceTree = "<group>"; };
+		BD712AD024564CA100271EED /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BD712AD2245740FC00271EED /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		BD712AD62457740B00271EED /* NewTaskCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskCategoryCell.swift; sourceTree = "<group>"; };
+		BD712AD824579BFC00271EED /* CalendarPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopup.swift; sourceTree = "<group>"; };
+		BD712AE02457A93500271EED /* CalendarPopupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopupCell.swift; sourceTree = "<group>"; };
+		BD712AE22458754800271EED /* CalendarPopupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopupCard.swift; sourceTree = "<group>"; };
+		BD712AE424587D2400271EED /* CalendarPopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopupDelegate.swift; sourceTree = "<group>"; };
+		BD74EDEE23BE703E0052C28F /* Calendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calendar.xcdatamodel; sourceTree = "<group>"; };
+		BD8EEF9E2517C7E900322C2B /* CustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEvent.swift; sourceTree = "<group>"; };
+		BDA5E724248FFD12001332F8 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		BDA96A99245B77A300BA924E /* TaskSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSaved.swift; sourceTree = "<group>"; };
+		BDA96A9B245B982E00BA924E /* PlannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerCell.swift; sourceTree = "<group>"; };
+		BDA96A9D245B98E700BA924E /* PlannerCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerCellDelegate.swift; sourceTree = "<group>"; };
+		BDA96A9F245E7D8E00BA924E /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		BDA96AA1245F30D000BA924E /* StopwatchSelectedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchSelectedCell.swift; sourceTree = "<group>"; };
+		BDA96AA3245F30E000BA924E /* StopwatchCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchCategoryCell.swift; sourceTree = "<group>"; };
+		BDBF4E3924C67AD1002A665B /* PageOneOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneOnboarding.swift; sourceTree = "<group>"; };
+		BDBF4E3B24C76CBF002A665B /* PageTwoOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoOnboarding.swift; sourceTree = "<group>"; };
+		BDBF4E3D24C76E1B002A665B /* ShouldTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldTutorial.swift; sourceTree = "<group>"; };
+		BDC7008C244A198A00F200E1 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		BDC9472B244006D400D75829 /* Updated scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Updated scripts"; sourceTree = "<group>"; };
+		BDC9472F2440076A00D75829 /* Old scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Old scripts"; sourceTree = "<group>"; };
+		BDC947312440094000D75829 /* Routines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routines.swift; sourceTree = "<group>"; };
+		BDC947632440B9F500D75829 /* RoutineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCell.swift; sourceTree = "<group>"; };
+		BDC9476524424D2200D75829 /* Updated.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Updated.xcassets; sourceTree = "<group>"; };
+		BDC9476624424E2500D75829 /* Updated Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Updated Assets"; sourceTree = "<group>"; };
+		BDC9476824429DA600D75829 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		BDC9476A2442A09200D75829 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		BDD299FC23BA4C7900267410 /* segoeui.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = segoeui.otf; path = "../../../Downloads/Assets for App/segoeui.otf"; sourceTree = "<group>"; };
+		BDD96B4D236D2642004D543B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDD96B67238DDC0D004D543B /* Assets for App */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Assets for App"; path = "/Users/miyan/Desktop/Calendar/Calendar/../../../Downloads/Assets for App"; sourceTree = "<absolute>"; };
+		BDD96B8623B557C4004D543B /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = ../../../Downloads/todoList/todoList/Image.xcassets; sourceTree = "<group>"; };
+		BDDC504224C93B8900A34064 /* TouchDownGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownGestureRecognizer.swift; sourceTree = "<group>"; };
+		BDEEB3D4244BBCD200CCBDBA /* WobbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleView.swift; sourceTree = "<group>"; };
+		BDF3C1CE236B7D5B00E11E71 /* TimeKeep - Planner and Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeKeep - Planner and Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF3C1D1236B7D5B00E11E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDF3C1D3236B7D5B00E11E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDF3C1DF236B7D5C00E11E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C34A8C763201968D82A1B3 /* Pods-TimeKeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeep.debug.xcconfig"; path = "Target Support Files/Pods-TimeKeep/Pods-TimeKeep.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF3C1CB236B7D5B00E11E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA581BCBC814C25ABFEBAB07 /* Pods_TimeKeep.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF3C1C5236B7D5B00E11E71 = {
+			isa = PBXGroup;
+			children = (
+				BDF3C1D0236B7D5B00E11E71 /* TimeKeep */,
+				BDF3C1CF236B7D5B00E11E71 /* Products */,
+				F54F9AEDACDBA457CB5F6884 /* Pods */,
+				D0201636307DC6E70021FD53 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF3C1CF236B7D5B00E11E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF3C1CE236B7D5B00E11E71 /* TimeKeep - Planner and Organizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF3C1D0236B7D5B00E11E71 /* TimeKeep */ = {
+			isa = PBXGroup;
+			children = (
+				BDF3C1D1236B7D5B00E11E71 /* AppDelegate.swift */,
+				BD06ED2B2400B2890024476C /* Settings.bundle */,
+				BDF3C1D3236B7D5B00E11E71 /* SceneDelegate.swift */,
+				BD2C06BF236D14D900D2157D /* Segoe UI.woff */,
+				BDC947312440094000D75829 /* Routines.swift */,
+				BDC947632440B9F500D75829 /* RoutineCell.swift */,
+				BDC9476824429DA600D75829 /* Categories.swift */,
+				BDA5E724248FFD12001332F8 /* DeviceInfo.swift */,
+				BD8EEF9E2517C7E900322C2B /* CustomEvent.swift */,
+				BD0EEDB2245919A20025B8D2 /* CalenderMonthDelegate.swift */,
+				BD0A3B5B247353B2005C65F2 /* TimelineYAxisRenderer.swift */,
+				BDC7008C244A198A00F200E1 /* ColorCell.swift */,
+				BDA96A9D245B98E700BA924E /* PlannerCellDelegate.swift */,
+				BD712AE02457A93500271EED /* CalendarPopupCell.swift */,
+				BD712AD62457740B00271EED /* NewTaskCategoryCell.swift */,
+				BD712AE424587D2400271EED /* CalendarPopupDelegate.swift */,
+				BDC9476A2442A09200D75829 /* CategoryCell.swift */,
+				BDA96AA1245F30D000BA924E /* StopwatchSelectedCell.swift */,
+				BD0EEDB424591A9A0025B8D2 /* MonthCell.swift */,
+				BD246607244AA43D006DDC00 /* Category.swift */,
+				BDA96A99245B77A300BA924E /* TaskSaved.swift */,
+				BD712AC824551D4D00271EED /* TabBar.swift */,
+				BDA96AA3245F30E000BA924E /* StopwatchCategoryCell.swift */,
+				BD0A3B5924718FD6005C65F2 /* Routine.swift */,
+				BDBF4E3D24C76E1B002A665B /* ShouldTutorial.swift */,
+				BD0EEDB024589E8C0025B8D2 /* SelectedDateCell.swift */,
+				BDEEB3D4244BBCD200CCBDBA /* WobbleView.swift */,
+				BD712AE22458754800271EED /* CalendarPopupCard.swift */,
+				BDA96A9F245E7D8E00BA924E /* Stopwatch.swift */,
+				BD712ACA2455E93E00271EED /* TabBarController.swift */,
+				BD712ACE24562C6800271EED /* Planner.swift */,
+				BDA96A9B245B982E00BA924E /* PlannerCell.swift */,
+				BD712ACC2455F3F300271EED /* MainController.swift */,
+				BD712AD824579BFC00271EED /* CalendarPopup.swift */,
+				BD0A3B572470E8A2005C65F2 /* NewRoutine.swift */,
+				BD41D9F224F0AB6D00244E30 /* LaunchScreenVC.swift */,
+				BD712AD2245740FC00271EED /* NewTask.swift */,
+				BD712AD024564CA100271EED /* Task.swift */,
+				BDDC504224C93B8900A34064 /* TouchDownGestureRecognizer.swift */,
+				BD5E613D24B8C61D0095CF6C /* CustomRenderer.swift */,
+				BD27B2BB245097E700CC8D5C /* TabBarCell.swift */,
+				BDC9472B244006D400D75829 /* Updated scripts */,
+				BDD96B4D236D2642004D543B /* Main.storyboard */,
+				BD74EDED23BE703D0052C28F /* Calendar.xcdatamodeld */,
+				BD0E9A2824678AA700EBFB75 /* Timeline.swift */,
+				BD0A3B53246C77EC005C65F2 /* Charts.swift */,
+				BD0E9A202464C0F100EBFB75 /* TimelineSeperatorCell.swift */,
+				BD0E9A2D2467A80100EBFB75 /* HourFormat.swift */,
+				BD69B30D24BA734000C049FE /* ValueNameFormat.swift */,
+				BD0A3B552470924E005C65F2 /* ChartsFormat.swift */,
+				BD0A3B5D24744645005C65F2 /* CategoryPopup.swift */,
+				BD69D50A24F96212007E0A52 /* Documentation.txt */,
+				BD69D50824F961F8007E0A52 /* APACHELICENSE.txt */,
+				BD69D50D24F9627B007E0A52 /* MITLICENSEBaFluidView.txt */,
+				BD69D50C24F9627B007E0A52 /* MITLICENSEWobbleView.txt */,
+				BD69D51024F962CA007E0A52 /* MITLICENSEBEMCheckBox.txt */,
+				BD69D51224F96354007E0A52 /* MITLICENSECircleColorPicker.txt */,
+				BDBF4E3924C67AD1002A665B /* PageOneOnboarding.swift */,
+				BDBF4E3B24C76CBF002A665B /* PageTwoOnboarding.swift */,
+				BDF3C1DF236B7D5C00E11E71 /* Info.plist */,
+				BD2C06BE236D14D900D2157D /* Segoe UI Bold Italic.woff */,
+				BD700FF423B8831D00F131EA /* Segoe UI.woff */,
+				BD69D4F624F206B1007E0A52 /* Default-Portrait-1194h.png */,
+				BD69D50424F20D6C007E0A52 /* Default-Portrait.png */,
+				BD69D50224F20CCC007E0A52 /* Default-Portrait-iPad7Gen.png */,
+				BD69D4F924F20A2E007E0A52 /* Default-Portrait-1112h.png */,
+				BD69D4FA24F20A2F007E0A52 /* Default-Portrait-iPadPro.png */,
+				BD2C06BD236D14D900D2157D /* Segoe UI Bold.woff */,
+				BD2C06C0236D14D900D2157D /* Segoe UI Italic.woff */,
+				BDD299FC23BA4C7900267410 /* segoeui.otf */,
+				BD2C06CA236D185F00D2157D /* LaunchScreen.storyboard */,
+				BDC9472F2440076A00D75829 /* Old scripts */,
+				BD700FFA23B9156900F131EA /* Fonts */,
+				BDC9476624424E2500D75829 /* Updated Assets */,
+				BDD96B8623B557C4004D543B /* Image.xcassets */,
+				BDC9476524424D2200D75829 /* Updated.xcassets */,
+				BDD96B67238DDC0D004D543B /* Assets for App */,
+				BD2C06F9236D20A900D2157D /* checkBoxFILLED.imageset */,
+			);
+			path = TimeKeep;
+			sourceTree = "<group>";
+		};
+		D0201636307DC6E70021FD53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214FC36C57DEC517B1DA33EE /* Pods_TimeKeep.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F54F9AEDACDBA457CB5F6884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C34A8C763201968D82A1B3 /* Pods-TimeKeep.debug.xcconfig */,
+				16CC285AD6895B9E69E22ECE /* Pods-TimeKeep.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF3C1CD236B7D5B00E11E71 /* TimeKeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF3C1E2236B7D5C00E11E71 /* Build configuration list for PBXNativeTarget "TimeKeep" */;
+			buildPhases = (
+				EF106C99DAB613C235A663C3 /* [CP] Check Pods Manifest.lock */,
+				BDF3C1CA236B7D5B00E11E71 /* Sources */,
+				BDF3C1CB236B7D5B00E11E71 /* Frameworks */,
+				BDF3C1CC236B7D5B00E11E71 /* Resources */,
+				C7DD192D6157CBAC2340F48D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeKeep;
+			productName = Calendar;
+			productReference = BDF3C1CE236B7D5B00E11E71 /* TimeKeep - Planner and Organizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF3C1C6236B7D5B00E11E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Darren Key";
+				TargetAttributes = {
+					BDF3C1CD236B7D5B00E11E71 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = BDF3C1C9236B7D5B00E11E71 /* Build configuration list for PBXProject "TimeKeep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF3C1C5236B7D5B00E11E71;
+			productRefGroup = BDF3C1CF236B7D5B00E11E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF3C1CD236B7D5B00E11E71 /* TimeKeep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF3C1CC236B7D5B00E11E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD69D50F24F9627C007E0A52 /* MITLICENSEBaFluidView.txt in Resources */,
+				BD69D4FE24F20A2F007E0A52 /* Default-Portrait-1112h.png in Resources */,
+				BD69D51324F96354007E0A52 /* MITLICENSECircleColorPicker.txt in Resources */,
+				BD69D50324F20CCD007E0A52 /* Default-Portrait-iPad7Gen.png in Resources */,
+				BDD96B4E236D2642004D543B /* Main.storyboard in Resources */,
+				BD700FFB23B9156A00F131EA /* Fonts in Resources */,
+				BDC947302440076A00D75829 /* Old scripts in Resources */,
+				BD69D50E24F9627C007E0A52 /* MITLICENSEWobbleView.txt in Resources */,
+				BDD96B69239C5F01004D543B /* Assets for App in Resources */,
+				BD2C06C1236D14D900D2157D /* Segoe UI Bold.woff in Resources */,
+				BDD299FD23BA4C7A00267410 /* segoeui.otf in Resources */,
+				BD69D4FF24F20A2F007E0A52 /* Default-Portrait-iPadPro.png in Resources */,
+				BD2C06C4236D14D900D2157D /* Segoe UI Italic.woff in Resources */,
+				BD2C06FA236D20A900D2157D /* checkBoxFILLED.imageset in Resources */,
+				BDC9476724424E2500D75829 /* Updated Assets in Resources */,
+				BD69D50924F961F8007E0A52 /* APACHELICENSE.txt in Resources */,
+				BD2C06C2236D14D900D2157D /* Segoe UI Bold Italic.woff in Resources */,
+				BDC9476D2442BD5C00D75829 /* Updated.xcassets in Resources */,
+				BDC9472C244006D400D75829 /* Updated scripts in Resources */,
+				BD69D50B24F96212007E0A52 /* Documentation.txt in Resources */,
+				BD06ED2C2400B2890024476C /* Settings.bundle in Resources */,
+				BDD96B8723B557C4004D543B /* Image.xcassets in Resources */,
+				BD700FF523B8831E00F131EA /* Segoe UI.woff in Resources */,
+				BD69D4F724F206B1007E0A52 /* Default-Portrait-1194h.png in Resources */,
+				BD69D51124F962CB007E0A52 /* MITLICENSEBEMCheckBox.txt in Resources */,
+				BD69D50524F20D6D007E0A52 /* Default-Portrait.png in Resources */,
+				BD2C06D2236D185F00D2157D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7DD192D6157CBAC2340F48D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeKeep/Pods-TimeKeep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeKeep/Pods-TimeKeep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeKeep/Pods-TimeKeep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF106C99DAB613C235A663C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeKeep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF3C1CA236B7D5B00E11E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8EEF9F2517C7E900322C2B /* CustomEvent.swift in Sources */,
+				BD0A3B5E24744645005C65F2 /* CategoryPopup.swift in Sources */,
+				BDC947322440094000D75829 /* Routines.swift in Sources */,
+				BDA96A9C245B982E00BA924E /* PlannerCell.swift in Sources */,
+				BD0EEDB124589E8C0025B8D2 /* SelectedDateCell.swift in Sources */,
+				BDBF4E3E24C76E1B002A665B /* ShouldTutorial.swift in Sources */,
+				BD0A3B562470924E005C65F2 /* ChartsFormat.swift in Sources */,
+				BD0A3B5A24718FD6005C65F2 /* Routine.swift in Sources */,
+				BD5E613E24B8C61D0095CF6C /* CustomRenderer.swift in Sources */,
+				BD712ACB2455E93E00271EED /* TabBarController.swift in Sources */,
+				BDC9476924429DA600D75829 /* Categories.swift in Sources */,
+				BDC7008D244A198A00F200E1 /* ColorCell.swift in Sources */,
+				BDBF4E3C24C76CBF002A665B /* PageTwoOnboarding.swift in Sources */,
+				BD69B30E24BA734000C049FE /* ValueNameFormat.swift in Sources */,
+				BD0E9A212464C0F100EBFB75 /* TimelineSeperatorCell.swift in Sources */,
+				BD0EEDB3245919A20025B8D2 /* CalenderMonthDelegate.swift in Sources */,
+				BDA96AA4245F30E000BA924E /* StopwatchCategoryCell.swift in Sources */,
+				BDA96A9E245B98E700BA924E /* PlannerCellDelegate.swift in Sources */,
+				BD712AE12457A93500271EED /* CalendarPopupCell.swift in Sources */,
+				BD712AC924551D4D00271EED /* TabBar.swift in Sources */,
+				BD74EDEF23BE703E0052C28F /* Calendar.xcdatamodeld in Sources */,
+				BD0A3B5C247353B2005C65F2 /* TimelineYAxisRenderer.swift in Sources */,
+				BD712AE524587D2400271EED /* CalendarPopupDelegate.swift in Sources */,
+				BD0E9A2E2467A80100EBFB75 /* HourFormat.swift in Sources */,
+				BD712AD3245740FC00271EED /* NewTask.swift in Sources */,
+				BDC9476C2442B30900D75829 /* CategoryCell.swift in Sources */,
+				BD0A3B582470E8A2005C65F2 /* NewRoutine.swift in Sources */,
+				BD712AE32458754800271EED /* CalendarPopupCard.swift in Sources */,
+				BD0A3B54246C77EC005C65F2 /* Charts.swift in Sources */,
+				BD246608244AA43D006DDC00 /* Category.swift in Sources */,
+				BDDC504324C93B8900A34064 /* TouchDownGestureRecognizer.swift in Sources */,
+				BD712AD124564CA100271EED /* Task.swift in Sources */,
+				BDBF4E3A24C67AD1002A665B /* PageOneOnboarding.swift in Sources */,
+				BD0EEDB524591A9A0025B8D2 /* MonthCell.swift in Sources */,
+				BDA96AA2245F30D000BA924E /* StopwatchSelectedCell.swift in Sources */,
+				BD0E9A2924678AA700EBFB75 /* Timeline.swift in Sources */,
+				BD41D9F324F0AB6D00244E30 /* LaunchScreenVC.swift in Sources */,
+				BDA96AA0245E7D8F00BA924E /* Stopwatch.swift in Sources */,
+				BD712ACD2455F3F300271EED /* MainController.swift in Sources */,
+				BD712AD924579BFC00271EED /* CalendarPopup.swift in Sources */,
+				BD27B2BC245097E700CC8D5C /* TabBarCell.swift in Sources */,
+				BDC947642440B9F500D75829 /* RoutineCell.swift in Sources */,
+				BD712ACF24562C6800271EED /* Planner.swift in Sources */,
+				BDEEB3D5244BBCD200CCBDBA /* WobbleView.swift in Sources */,
+				BDA96A9A245B77A300BA924E /* TaskSaved.swift in Sources */,
+				BDF3C1D2236B7D5B00E11E71 /* AppDelegate.swift in Sources */,
+				BDF3C1D4236B7D5B00E11E71 /* SceneDelegate.swift in Sources */,
+				BDA5E725248FFD12001332F8 /* DeviceInfo.swift in Sources */,
+				BD712AD72457740B00271EED /* NewTaskCategoryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BDF3C1E0236B7D5C00E11E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CONFIGURATION_BUILD_DIR)",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF3C1E1236B7D5C00E11E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CONFIGURATION_BUILD_DIR)",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF3C1E3236B7D5C00E11E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C34A8C763201968D82A1B3 /* Pods-TimeKeep.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = NewAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 549XCG8DN9;
+				INFOPLIST_FILE = TimeKeep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenkeymichaelfu.TimeKeep;
+				PRODUCT_MODULE_NAME = TimeKeep;
+				PRODUCT_NAME = "TimeKeep - Planner and Organizer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDF3C1E4236B7D5C00E11E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CC285AD6895B9E69E22ECE /* Pods-TimeKeep.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = NewAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 549XCG8DN9;
+				INFOPLIST_FILE = TimeKeep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenkeymichaelfu.TimeKeep;
+				PRODUCT_MODULE_NAME = TimeKeep;
+				PRODUCT_NAME = "TimeKeep - Planner and Organizer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF3C1C9236B7D5B00E11E71 /* Build configuration list for PBXProject "TimeKeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF3C1E0236B7D5C00E11E71 /* Debug */,
+				BDF3C1E1236B7D5C00E11E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF3C1E2236B7D5C00E11E71 /* Build configuration list for PBXNativeTarget "TimeKeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF3C1E3236B7D5C00E11E71 /* Debug */,
+				BDF3C1E4236B7D5C00E11E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD74EDED23BE703D0052C28F /* Calendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD74EDEE23BE703E0052C28F /* Calendar.xcdatamodel */,
+			);
+			currentVersion = BD74EDEE23BE703E0052C28F /* Calendar.xcdatamodel */;
+			path = Calendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDF3C1C6236B7D5B00E11E71 /* Project object */;
+}

@@ -1,0 +1,6 @@
+This software makes use of WobbleView. See MITLICENSEWobbleView.txt.
+This software makes use of BAFluidVIew. See MITLICENSEBaFluidView.txt.
+This software makes use of BEMCheckBox. See MITLICENSEBEMCheckBox.txt.
+This software makes use of Charts. See APACHELICENSE.txt.
+This software makes use of CircleColorPicker. See MITLICENSECircleColorPicker.txt.
+This software makes use of RealmSwift. See APACHELICENSE.txt.
