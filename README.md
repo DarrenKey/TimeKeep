@@ -5,4 +5,4 @@ App available on the app store for free here: https://apps.apple.com/us/app/time
 
 Licensed under the Apache 2.0 license. Please accredit if using!
 
-![]ActualThatBufeo-size_restricted.gif
+![](ActualThatBufeo-size_restricted.gif)
